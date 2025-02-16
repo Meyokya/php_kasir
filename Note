@@ -1,0 +1,30 @@
+/Inventaris-Kasir/       # Root folder
+│── /admin/              # Folder khusus Admin
+│   │── dashboard.php    # Dashboard Admin
+│   │── kelola_barang.php # CRUD Barang
+│   │── kelola_pengguna.php # CRUD Pengguna
+│   │── laporan_penjualan.php # Laporan Penjualan
+│
+│── /kasir/              # Folder khusus Kasir
+│   │── penjualan.php    # Halaman transaksi penjualan
+│   │── riwayat_penjualan.php      # Riwayat transaksi
+│   │── cetak_struk.php  # Print Struk
+│
+│── /config/             # Konfigurasi & koneksi database
+│   │── database.php     # Koneksi ke MySQL
+│
+│── /assets/             # Folder untuk CSS, JS, dan gambar
+│   │── /css/
+│   │   ├── style.css    # CSS utama
+│   │── /js/
+│   │   ├── script.js    # JavaScript tambahan (jika ada)
+│   │── /img/            # Folder gambar/logo
+│
+│── /includes/           # Folder untuk include file
+│   │── header.php       # Header website
+│   │── footer.php       # Footer website
+│
+│── /login.php           # Halaman login
+│── /logout.php          # Logout dan destroy session
+│── /index.php           # Redirect ke login
+│── /README.md           # Dokumentasi proyek

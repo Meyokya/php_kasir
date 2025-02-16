@@ -1,0 +1,373 @@
+    /* Reset Dasar */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Body */
+    body {
+        display: flex;
+        background-color: #f4f1ff;
+        color: #333;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 260px;
+        height: 100vh;
+        background: linear-gradient(135deg, #6a11cb, #b833ff);
+        color: white;
+        padding: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 6px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sidebar ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateX(5px);
+    }
+
+    /* Main Content */
+    main {
+        margin-left: 260px;
+        padding: 20px;
+        width: calc(100% - 260px);
+    }
+
+    /* Header */
+    header {
+        background: #6a11cb;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    /* Statistik Dashboard */
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Card Stats */
+    .card {
+        background: #fff;
+        border-left: 5px solid #6a11cb;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        width: calc(33.333% - 20px);
+        text-align: center;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 15px rgba(106, 17, 203, 0.3);
+    }
+
+    .card h3 {
+        font-size: 18px;
+        color: #6a11cb;
+    }
+
+    .card p {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+
+
+    /* ======== FORM CONTAINER ======== */
+    .form-container {
+        background: white;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: auto;
+    }
+
+    /* ======== FORM CARD ======== */
+    .form-card {
+        text-align: center;
+    }
+
+    .form-card h2 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #6a11cb;
+        /* Purple */
+        margin-bottom: 15px;
+    }
+
+    /* ======== ERROR MESSAGE ======== */
+    .error {
+        color: #ff4d4d;
+        background: #ffe5e5;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* ======== FORM INPUTS ======== */
+    form {
+        text-align: left;
+    }
+
+    form label {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #444;
+        margin-bottom: 5px;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    option {
+        padding: 10px;
+    }
+
+    /* Focus Effect */
+    form input:focus {
+        border-color: #6a11cb;
+        outline: none;
+        box-shadow: 0 0 5px rgba(106, 17, 203, 0.2);
+    }
+
+    /* ======== BUTTON STYLES ======== */
+    button {
+        width: 100%;
+        background: #6a11cb;
+        color: white;
+        border: none;
+        padding: 6px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    button:hover {
+        background: #520fa6;
+    }
+
+    /* Link Button Styling */
+    a.btn {
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        padding: 12px 20px;
+        margin-bottom: 5px;
+        background-color: #6a11cb;
+        color: white;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    a.btn:hover {
+        background-color: #520fa6;
+    }
+
+    /* ======== BACK BUTTON ======== */
+    .kembali-btn {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background: #ccc;
+        color: black;
+        padding: 10px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 10px;
+        transition: background 0.3s;
+    }
+
+    .kembali-btn:hover {
+        background: #b3b3b3;
+    }
+
+    /* TABLE STYLE */
+.table-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table-container h3 {
+    color: #6a11cb;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Arial', sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    transition: background 0.2s ease;
+}
+
+th {
+    background: #6a11cb;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: rgba(106, 17, 203, 0.1);
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td {
+    font-family: 'Arial', sans-serif;
+}
+
+td:hover {
+    background-color: rgba(106, 17, 203, 0.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .table-container {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+
+    .table-container h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+    /* Edit Button Style */
+    .btn-edit {
+        background-color: #a84caf;
+        /* Green background */
+        color: white;
+        border: 1px solid #a84caf;
+        /* Border matching the background */
+        border-radius: 4px;
+        padding: 5px 10px;
+
+    }
+
+    .btn-edit:hover {
+        background-color: #863b8b;
+        /* Slightly darker green */
+        border-color: #45a049;
+        transform: scale(1.05);
+        /* Slightly enlarge on hover */
+        
+    }
+
+    /* Delete Button Style */
+    .btn-hapus {
+        background-color: #f44336;
+        /* Red background */
+        color: white;
+        border: 1px solid #f44336;
+        /* Border matching the background */
+        border-radius: 4px;
+        padding: 5px 10px;
+    }
+
+    .btn-hapus:hover {
+        background-color: #e53935;
+        /* Slightly darker red */
+        border-color: #e53935;
+        transform: scale(1.05);
+        /* Slightly enlarge on hover */
+    }
+
+    /* Optional: If you want the buttons to be aligned with each other */
+    td a {
+        margin-right: 10px;
+    }
